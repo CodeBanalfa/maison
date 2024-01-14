@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Si vous souhaitez centrer verticalement également */
+}
+.maisonList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.maisonList div {
+  width: 100%;
+  height: 200px; /* Ajustez en fonction de la taille que vous souhaitez pour les images */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.maisonList h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.maisonList p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}

@@ -1,0 +1,90 @@
+.Navbr {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(198, 135, 135);
+  display: flex;
+  flex-direction: row;
+}
+.Navbr .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+}
+.Navbr .leftSide img {
+  width: 70px;
+}
+.Navbr .rightSide {
+  flex: 50%;
+  margin: 0 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-right: 50px;
+}
+.Navbr .rightSide a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 20px;
+}
+.Navbr .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.Navbr #open img {
+  display: none;
+}
+.Navbr #close img {
+  display: inherit;
+}
+.Navbr #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.Navbr #close .hiddenLinks {
+  display: none;
+}
+
+.Navbr #open a {
+  width: 70px;
+  margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+  .Navbr .rightSide a {
+    width: 70px;
+  }
+  .Navbr .leftSide {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Navbr .rightSide a {
+    display: none;
+  }
+
+  .Navbr .rightSide {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .Navbr .rightSide button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Navbr .rightSide button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}
